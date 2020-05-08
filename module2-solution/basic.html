@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: "Lucida Console", Courier, monospace;
+      font-size: 28px;
+    }
+
+    .row {
+      width: 100%;
+    }
+
+    div div {
+      height:250px;
+     
+    }
+
+    div.sec {
+      margin: 10px;
+      border: 1px solid black;  
+      background-color: #D8D8D8;
+    }
+
+   
+    
+
+    div.sec-title {
+      float: right;
+      border: 1px solid black;
+      margin-top: 0px;
+      height: 25px;
+      width: 120px;
+      font-family: "Lucida Console", Courier, monospace;
+      background-color: #e8f4f8;
+      color: #2c778f;
+      padding: 2px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    div.sec-text {
+      clear: right;
+      padding: 10px;
+      font-family: "Lucida Console", Courier, monospace;
+    }
+
+    @media (min-width: 992px) {
+      .col-lg-4 {
+        float: left;
+        width: 33.33%;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      .col-md-6 {
+        float: left;
+        width: 50%;
+      }
+      .sp-col-md-6 {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .col-sm-12 {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1> Our Menu </h1>
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      
+      <div class="sec">
+        <div class="sec-title">Chicken</div>
+        <div class="sec-text">
+          Chickens (Gallus domesticus) are domestic birds that cannot fly. There are over 150 different breeds of chicken that come in various colours, patterns and sizes. The chicken is believed to have descended from the wild Indian and south-east Asian Red Junglefowl which is biologically classified as the same species.
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="sec">
+            <div class="sec-title">Beef</div>
+            <div class="sec-text">
+                Beef is the meat of cattle (Bos taurus). It is categorized as red meat — a term used for the meat of mammals, which contains higher amounts of iron than chicken or fish. Usually eaten as roasts, ribs, or steaks, beef is also commonly ground or minced. Patties of ground beef are often used in hamburgers.
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-4 sp-col-md-6 col-sm-12">
+        <div class="sec">
+            <div class="sec-title">Sushi</div>
+            <div class="sec-text">
+                Sushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat. Many types of sushi are vegetarian.
+            </div>
+          </div>
+    </div>
+  </div>
+
+</body>
+</html>
